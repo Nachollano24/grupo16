@@ -201,15 +201,20 @@ hr {
     margin-bottom: 15px;
 }
 
-.content h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
 .content {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 9px;
 }
+
+.content h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: rgb(171, 6, 6);
+}
+
+
+
+
 
 .footer {
     display: flex;
