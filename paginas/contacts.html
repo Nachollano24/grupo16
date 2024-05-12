@@ -26,45 +26,45 @@
       </nav>
       <a href="#" class="btn-1">Login</a>
     </div>
-    <!-- <div class="header-content container">
-      <div class="header-1">
-        <img src="imagenes/IT-LOGO-COLOR.png" alt="">
-        <a href="#" class="btn-2">Ver ahora</a>
-      </div>
-      <div class="header-2">
-        <h1>Las mejores <br> peliculas</h1>
-        <img src="imagenes/play.png" alt="">
-      </div>
-    </div> -->
   </header>
 
   <main>
     <div class="container form-container">
       <h3 class="form-title">Contáctanos</h3>
-      <form action="" class="form">
+      <form name="contacts" class="form" onsubmit="return submitForm()">
         <div>
           <label for="text">Nombre:</label>
-          <input type="text">
+          <input type="text" id="name">
+          <div class="validate" id="validate_name"> &nbsp; </div>
         </div>
         <div>
           <label for="country">País:</label>
           <select name="country" id="country">
+            <option value=""></option>
             <option value="Argentina">Argentina</option>
             <option value="Argentina">Chile</option>
             <option value="Argentina">Paraguay</option>
             <option value="Argentina">Uruguay</option>
             <option value="Argentina">España</option>
           </select>
+          <div class="validate" id="validate_country"> &nbsp; </div>
         </div>
         <div>
-          <label for="suggest">Motivo: </label>
-          <input type="text" name="suggest">
+          <label for="issue">Motivo: </label>
+          <input type="text" name="issue" id="issue">
+          <div class="validate" id="validate_issue"> &nbsp; </div>
+        </div>
+        <div>
+          <label for="description">Descripción: </label>
+          <input type="text" name="description" id="description">
+          <div class="validate" id="validate_description"> &nbsp; </div>
         </div>
         <div>
           <label for="notify">Desea recibir notificaciones de Locopelis?</label>
-          <input type="checkbox" name="notify" id="">
+          <input type="checkbox" name="notify" id="notify">
+          <div class="validate" id="validate_notify"> &nbsp; </div>
         </div>
-        <input type="submit">
+        <input type="submit" value="Enviar">
       </form>
     </div>
   </main>
@@ -79,7 +79,7 @@
     </ul>
   </footer>
 
-  <!-- <script src="../script.js"></script> -->
+  <script src="../Javascript/contacts.js"></script>
 </body>
 
 </html>

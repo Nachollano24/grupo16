@@ -137,6 +137,10 @@ body{
     gap: 15px;
 }
 
+.validate {
+    color: red;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -227,6 +231,10 @@ body{
 }
 
 @media (min-width:601px) {
+    main {  
+        min-height: 60vh;
+    }
+
     .navbar ul li a {
         font-size: 1.25rem;
         padding: 15px;
