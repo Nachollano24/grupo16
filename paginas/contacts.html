@@ -4,24 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peliculas - Contactos</title>
-  <link rel="stylesheet" href="hojas de estilo/contacts.css">
+  <title>Peliculas - Contacto</title>
+  <link rel="stylesheet" href="/hojas de estilo/contacts.css">  
 </head>
 
 <body>
   <header class="header">
     <div class="menu container">
-      <a href="#" class="logo">locopelis</a>
+      <a href="../index.html" class="logo">locopelis</a>
       <input type="checkbox" id="menu" />
       <label for="menu">
-        <img src="imagenes/menu.png" class="menu-icono" alt="menu">
+        <img src="/imagenes/menu.png" class="menu-icono" alt="menu">
       </label>
       <nav class="navbar">
         <ul>
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Nosotros</a></li>
           <li><a href="#">Peliculas</a></li>
-          <li><a href="/paginas/contacts.html">Contacto</a></li>
+          <li><a href="contacts.html">Contacto</a></li>
         </ul>
       </nav>
       <a href="#" class="btn-1">Login</a>
@@ -39,7 +39,34 @@
   </header>
 
   <main>
-
+    <div class="container form-container">
+      <h3 class="form-title">Contáctanos</h3>
+      <form action="" class="form">
+        <div>
+          <label for="text">Nombre:</label>
+          <input type="text">
+        </div>
+        <div>
+          <label for="country">País:</label>
+          <select name="country" id="country">
+            <option value="Argentina">Argentina</option>
+            <option value="Argentina">Chile</option>
+            <option value="Argentina">Paraguay</option>
+            <option value="Argentina">Uruguay</option>
+            <option value="Argentina">España</option>
+          </select>
+        </div>
+        <div>
+          <label for="suggest">Motivo: </label>
+          <input type="text" name="suggest">
+        </div>
+        <div>
+          <label for="notify">Desea recibir notificaciones de Locopelis?</label>
+          <input type="checkbox" name="notify" id="">
+        </div>
+        <input type="submit">
+      </form>
+    </div>
   </main>
 
   <footer class="footer container">
@@ -52,6 +79,7 @@
     </ul>
   </footer>
 
+  <!-- <script src="../script.js"></script> -->
 </body>
 
 </html>

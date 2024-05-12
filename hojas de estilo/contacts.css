@@ -14,20 +14,13 @@ body{
     color: #ffffff;
 }
 
-/* Header */
-
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .header{
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 20px;
 }
 
 .menu{
@@ -45,17 +38,12 @@ body{
     color: #ffffff;
 }
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-}
-
 .menu .navbar ul li {
    position: relative;
    float: left;
 }
 
-.menu .navbar ul li a {
+.navbar ul li a {
     font-size: 22px;
     padding: 20px;
     color: #ffffff;
@@ -129,7 +117,25 @@ body{
     color: #ffffff;
 }
 
-/* Footer */
+.form-container {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
 
 .footer {
     display: flex;
@@ -160,14 +166,6 @@ body{
 }
 
 @media (max-width:600px) {
-    .navbar ul li a {
-        font-size: 1rem;
-        padding: 5px;
-        color: #ffffff;
-    }
-}
-
-/* @media (max-width:991px) {
     .menu {
         padding: 20px;
     }
@@ -226,6 +224,77 @@ body{
         margin-top: 15px;
         justify-content: center;
     }
+}
 
+@media (min-width:601px) {
+    .navbar ul li a {
+        font-size: 1.25rem;
+        padding: 15px;
+        color: #ffffff;
+        display: flex;
+    }
 
-} */
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .menu label {
+        display: none;
+    }
+
+    .menu .navbar {
+        background-color: #030303;
+        display: flex;
+    }
+
+    .form-container {
+        margin-top: 7vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+}
+
+@media (min-width:900px) {
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+    }
+
+    .navbar ul li a {
+        font-size: 1.5rem;
+        padding: 20px;
+        color: #ffffff;
+        display: flex;
+    }
+
+    .footer {
+        padding: 25px;
+    }
+}
+
+@media (min-width:1200px) {
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
