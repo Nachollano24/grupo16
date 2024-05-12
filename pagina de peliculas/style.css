@@ -19,6 +19,8 @@ body{
     margin: 0 auto;
 }
 
+/* HEADER */
+
 .header{
     background-image: url(imagenes/it-bg.jpg);
     background-position: center center;
@@ -59,6 +61,7 @@ body{
 
 .menu .navbar ul li a:hover {
    color: #ff2f28;
+   transition: all .3s;
 }
 
 #menu {
@@ -105,6 +108,8 @@ body{
 .header-2 img {
     width: 70px;
 }
+
+/* MAIN */
 
 .btn-1 {
     display: inline-block;
@@ -192,18 +197,22 @@ hr {
 }
 
 .load-more:hover {
+    transition: all .3s;
     background-color: #ff2f28;
     color: #ffffff
+    
+}
+
+.content:hover {
+    color: #ffffff;
+    transition: all 1s;
+    transform: scale(1.05);
+    box-shadow: 1px 4px 4px 1px black
 }
 
 .content img {
     width: 100%;
     margin-bottom: 15px;
-}
-
-.content {
-    color: #ffffff;
-    font-size: 9px;
 }
 
 .content h3 {
@@ -212,9 +221,12 @@ hr {
     color: rgb(171, 6, 6);
 }
 
+.content p{
+    font-size: 9px; 
+}
 
 
-
+/* FOOTER */
 
 .footer {
     display: flex;
@@ -240,9 +252,12 @@ hr {
     display: block;
 }
 
-.footer a.hover {
+.footer a:hover {
     color: #ff2f28;
+    transition: all .3s;
 }
+
+/* RESPONSIVE */
 
 @media (max-width:991px) {
     .menu {
