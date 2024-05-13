@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header class="account-header">
+        <div class="menu container">
+            <a href="../index.html" class="logo">locopelis</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="/index.html">Peliculas</a></li>
+                    <li><a href="contacts.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="login.html" class="btn-1">Login</a>
+        </div>
+    </header>
+    
+    <main class="account-main">
+        <form id="login" class="account-content">
+            <h2>Login</h2>
+            <div>
+                <label for="login-email">Email</label>
+                <input id="login-email" class="input" type="text" name="email" />
+                <div id="login-email-error" class="error">Por favor ingresa tu email</div>
+            </div>
+            <div>
+                <label for="login-pass">Contraseña</label>
+                <input id="login-pass" class="input" type="password" name="pass" />
+                <div id="login-pass-error" class="error">Por favor ingresa tu contraseña</div>
+                <div id="login-error" class="error">El email o la contrasña es incorrecta</div>
+            </div>
+            <button id="login-btn" class="btn-1">Ingresar</button>
+            
+            <div class="account-other">
+                <p>Sos un usuario nuevo?</p>
+                <a href="signup.html">Crear cuenta</a>
+            </div>
+        </form>
+    </main>
+    
+    <footer class="footer container">
+        <h3>Locopelis</h3>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="/index.html">Peliculas</a></li>
+            <li><a href="contacts.html">Contacto</a></li>
+        </ul>
+    </footer>
+    
+    <script src="/Javascript/account.js"></script>
+</body>
