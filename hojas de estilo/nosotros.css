@@ -150,6 +150,11 @@ body{
 
 .about-box {
     padding: 100px; /* Agrega padding alrededor del contenedor de la imagen */
+    transition: 0.3s ease;
+}
+
+.about-box:hover {
+    transform: scale(1.05); 
 }
 
 .about-box img {
@@ -197,4 +202,77 @@ body{
 .footer a:hover {
     color: #ff2f28;
     transition: all .3s;
+}
+
+@media (max-width: 991px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+    }
+
+    .menu input:checked ~ .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .btn-1 {
+        display: none; /* Ocultar el botón de Login en el header */
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-box {
+        padding: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 0;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer h3 {
+        margin-bottom: 20px;
+    }
 }
