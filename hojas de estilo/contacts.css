@@ -54,6 +54,10 @@ body{
    color: #ff2f28;
 }
 
+.menu .navbar .login {
+    display: none;
+}
+
 #menu {
     display: none;
 }
@@ -118,7 +122,7 @@ body{
 }
 
 .form-container {
-    margin-top: 5vh;
+    margin-top: 7vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,11 +169,15 @@ body{
     display: block;
 }
 
-.footer a.hover {
+.footer a:hover {
     color: #ff2f28;
 }
 
-@media (max-width:600px) {
+.footer .login {
+    color: #ff2f28;
+}
+
+@media (max-width:991px) {
     .menu {
         padding: 20px;
     }
@@ -192,6 +200,10 @@ body{
 
     .btn-1 {
         display: none;
+    }
+    .menu .navbar .login {
+        display: block;
+        color: #ff2f28;
     }
 
     #menu:checked ~ .navbar {
@@ -235,35 +247,7 @@ body{
         min-height: 60vh;
     }
 
-    .navbar ul li a {
-        font-size: 1.25rem;
-        padding: 15px;
-        color: #ffffff;
-        display: flex;
-    }
-
-    .menu{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    .menu label {
-        display: none;
-    }
-
-    .menu .navbar {
-        background-color: #030303;
-        display: flex;
-    }
-
     .form-container {
-        margin-top: 7vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -272,37 +256,5 @@ body{
 
     .footer {
         padding: 15px;
-    }
-}
-
-@media (min-width:900px) {
-    .menu{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 25px;
-    }
-
-    .navbar ul li a {
-        font-size: 1.5rem;
-        padding: 20px;
-        color: #ffffff;
-        display: flex;
-    }
-
-    .footer {
-        padding: 25px;
-    }
-}
-
-@media (min-width:1200px) {
-    .menu{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
 }
